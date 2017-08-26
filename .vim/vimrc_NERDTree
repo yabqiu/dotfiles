@@ -1,0 +1,26 @@
+Plugin 'scrooloose/nerdtree'
+
+" NerdTree config and key bindings
+" autocmd vimenter * NERDTree
+" autocmd vimenter * if !argc() | NERDTree | endif
+map <F3> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['.git$']
+let NERDTreeIgnore += ['^\.DS_Store$']
+"let NERDTreeShowLineNumbers=1
+let NERDTreeDirArrows=0
+
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg)
+    exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:bg .' guifg='. a:fg
+    exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('java', 'brown', 'NONE')
+call NERDTreeHighlightFile('scala', 'darkred', 'NONE')
+call NERDTreeHighlightFile('sbt', 'darkred', 'NONE')
+call NERDTreeHighlightFile('js', 'yellow', 'NONE')
+call NERDTreeHighlightFile('css', 'magenta', 'NONE')
+call NERDTreeHighlightFile('md', 'lightgreen', 'NONE')
+call NERDTreeHighlightFile('xml', 'darkgreen', 'NONE')

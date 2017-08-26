@@ -1,0 +1,5 @@
+let mapleader = ";"
+
+map <leader>r :action Run<CR>
+map <leader>d :action Debug<CR>
+map <leader>h :action TypeHierarchy<CR>
