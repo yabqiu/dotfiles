@@ -435,6 +435,7 @@ Plugin 'asciidoc/vim-asciidoc'
 Plugin 'ervandew/supertab'
 Plugin 'artur-shaik/vim-javacomplete2' 
 Plugin 'skywind3000/asyncrun.vim'
+Plugin 'hashivim/vim-terraform'
 " All of your Plugins must be added before the following line
 
 source ./.vim/vimrc_NERDTree
@@ -447,6 +448,10 @@ au BufNewFile,BufRead *.avsc set filetype=avdl
 " Aireline for iTerm, either of them
 set t_Co=256
 "set term=xterm-256color
+
+"terraform
+let g:terraform_align=1
+let g:terraform_remap_spacebar=1
 
 "tagbar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
