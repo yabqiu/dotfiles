@@ -114,7 +114,7 @@ export EDITOR=vim
 
 alias vi=vim
 #Applications/MacVim.app/Contents/MacOS/vim
-#alias vim=/Applications/MacVim.app/Contents/MacOS/vim
+alias vim=/Applications/MacVim.app/Contents/MacOS/vim
 
 #PROMPT='%B%m%~%b$(git_super_status) %# '
 PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_super_status)'

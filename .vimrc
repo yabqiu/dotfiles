@@ -437,7 +437,7 @@ Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'skywind3000/asyncrun.vim'
 " All of your Plugins must be added before the following line
 
-source .vim/vimrc_NERDTree
+source ./.vim/vimrc_NERDTree
 
 call vundle#end()            " required
 filetype plugin indent on    " required
