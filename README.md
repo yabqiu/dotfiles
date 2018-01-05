@@ -9,7 +9,7 @@ ln -s <path-to-dotfiles>/.ideavimrc ~/.ideavimrc
 ```
 
 #### NERDTree(iTerm2) Font setting
-In order to show devicons in NERDTree file tree, we need to install one of nerdfonts. We can try any other fonts if we want.
+In order to show devicons in NERDTree file tree, we need to install one of nerdfonts. We can try any other fonts if we want. Get more nerdfonts from this repo https://github.com/ryanoasis/nerd-fonts
 
 For this example, we install font `Sauce Code Pro Nerd Font Complete Mono.ttf`
 
