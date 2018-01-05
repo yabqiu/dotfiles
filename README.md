@@ -1,3 +1,5 @@
+#### Create symbol links for every dotfiles
+
 ```bash
 ln -s <path-to-dotfiles>/.zshrc ~/.zshrc
 ln -s <path-to-dotfiles>/.vimrc ~/.vimrc
